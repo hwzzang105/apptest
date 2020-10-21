@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+*{ margin:0; padding:0;}
+body, html { width:100%; height:100%; }
+ul { list-style:none;}
+a{ text-decoration:none;}
+button, label, input{ outline:0; border:0; user-select:none; }
+img{ border:0; }
+
+
+.ft { clear: both; padding-bottom: 50px;}
+.ft_link{ }
+.ft_link{ clear:both; height: 65px; background-color: #A566FF;}
+.ft_link li{ float:left; width: 120px; margin-left: 30px; }
+.ft_link li a { display: block; text-align: center; line-height: 65px; width: 200px; 
+ height: 65px; color: #FFBB00;  border-right: 1px soild #3F0099; font-weight: bold;}
+
+.admin_copy { padding-top: 60px;} 
+ .copyright{ text-align: center;}

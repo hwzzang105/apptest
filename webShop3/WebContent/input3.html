@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+
+	function fn_valdi(){
+		var login3 = document.logIn3;
+		var id = login3.m_id.value;
+		var pw = login3.m_pw.value;
+		
+		if(id.length == 0 || id == "") || (pw.length == 0 || pw == ""){
+			alert("아이디와 비밀번호를 입력하지 않았습니다.");
+		}else{
+			login3.method = "post";
+			login3.action = "login3";
+			login3.submit();
+		}
+	}
+
+</script>
+
+</head>
+<body>
+	<h3 style="padding-top:60px;">로그인</h3>
+	<form name="logIn3" action="login3" method="post" enctype="utf-8">
+	
+		<label for="id">아이디</label> : &nbsp; &nbsp;
+		<input type="text" id="id" name="m_id" /> <br>
+		<label for="pw">비밀번호</label> :
+		<input type="password" id="pw" name="m_pw" /> <br>
+		
+		
+		
+		<input type="button" onClick="fn_valdi()" value="로그인2"/>
+		<input type="submit" value="로그인"/>
+		<input type="reset" value="취소"/>
+		<input type="hidden" name="user_info" value="서울시 성북구" />
+	
+	</form>
+</body>
+</html>
